@@ -3,12 +3,12 @@ import SwiftUI
 struct ListView: View {
     let items: [Item]
     
-    @Environment(AppState.self) private var appState
+    @Environment(ExploreState.self) private var state
 
     var body: some View {
         List(items) { item in
             Button {
-                appState.path.append(.detail(item))
+                state.path.append(.detail(item))
             } label: {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(item.title)

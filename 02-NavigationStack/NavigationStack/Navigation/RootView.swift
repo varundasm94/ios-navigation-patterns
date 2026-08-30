@@ -5,30 +5,11 @@ struct RootView: View {
     @State private var appState = AppState()
     
     var body: some View {
-        NavigationStack(path: $appState.path) {
-            HomeView()
-                .navigationDestination(for: AppState.Route.self, destination: { route in destination(route)})
+        TabView {
+            ExploreCoordinatorView()
+                .tabItem { Label("Explore", systemImage: "magnifyingglass") }
         }
         .environment(appState)
         .onOpenURL(perform: { appState.handle($0) })
-        
-//        TabView {
-//            NavigationStack(path: $appState.tripsPath) {
-//                TripsHomeView()
-//                    .navigationDestination(for: TripsRoute.self) { route in
-//
-//                    }
-//            }
-//            .tabItem { Label("Trips", systemImage: "airplane") }
-    }
-
-    @ViewBuilder
-    private func destination(_ route: AppState.Route) -> some View {
-        switch route {
-        case .list:
-            ListView(items: Item.samples)
-        case .detail(let item):
-            DetailView(item: item)
-        }
     }
 }

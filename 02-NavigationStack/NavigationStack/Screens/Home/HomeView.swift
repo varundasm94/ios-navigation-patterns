@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
 
-    @Environment(AppState.self) private var appState
+    @Environment(ExploreState.self) private var state
     
     var body: some View {
         VStack(spacing: 24) {
@@ -18,7 +18,7 @@ struct HomeView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             Button("Explore Patterns") {
-                appState.path.append(.list)
+                state.path.append(.list)
             }
             .buttonStyle(.borderedProminent)
         }
