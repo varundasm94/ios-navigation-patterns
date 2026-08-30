@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4DAD83AB3044007E0005AC49 /* iOS Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAD83AB3044007E0005AC49 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4DAD83AD3044007E0005AC49 /* iOS Navigation */ = {
+		4DAD83AD3044007E0005AC49 /* Coordinator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "iOS Navigation";
+			path = "Coordinator";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		4DAD83A23044007E0005AC49 = {
 			isa = PBXGroup;
 			children = (
-				4DAD83AD3044007E0005AC49 /* iOS Navigation */,
+				4DAD83AD3044007E0005AC49 /* Coordinator */,
 				4DAD83AC3044007E0005AC49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		4DAD83AC3044007E0005AC49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DAD83AB3044007E0005AC49 /* iOS Navigation.app */,
+				4DAD83AB3044007E0005AC49 /* Coordinator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4DAD83AA3044007E0005AC49 /* iOS Navigation */ = {
+		4DAD83AA3044007E0005AC49 /* Coordinator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DAD83B6304400800005AC49 /* Build configuration list for PBXNativeTarget "iOS Navigation" */;
+			buildConfigurationList = 4DAD83B6304400800005AC49 /* Build configuration list for PBXNativeTarget "Coordinator" */;
 			buildPhases = (
 				4DAD83A73044007E0005AC49 /* Sources */,
 				4DAD83A83044007E0005AC49 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4DAD83AD3044007E0005AC49 /* iOS Navigation */,
+				4DAD83AD3044007E0005AC49 /* Coordinator */,
 			);
-			name = "iOS Navigation";
+			name = "Coordinator";
 			packageProductDependencies = (
 			);
-			productName = "iOS Navigation";
-			productReference = 4DAD83AB3044007E0005AC49 /* iOS Navigation.app */;
+			productName = "Coordinator";
+			productReference = 4DAD83AB3044007E0005AC49 /* Coordinator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4DAD83A63044007E0005AC49 /* Build configuration list for PBXProject "iOS Navigation" */;
+			buildConfigurationList = 4DAD83A63044007E0005AC49 /* Build configuration list for PBXProject "Coordinator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4DAD83AA3044007E0005AC49 /* iOS Navigation */,
+				4DAD83AA3044007E0005AC49 /* Coordinator */,
 			);
 		};
 /* End PBXProject section */
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4DAD83A63044007E0005AC49 /* Build configuration list for PBXProject "iOS Navigation" */ = {
+		4DAD83A63044007E0005AC49 /* Build configuration list for PBXProject "Coordinator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DAD83B4304400800005AC49 /* Debug */,
@@ -320,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DAD83B6304400800005AC49 /* Build configuration list for PBXNativeTarget "iOS Navigation" */ = {
+		4DAD83B6304400800005AC49 /* Build configuration list for PBXNativeTarget "Coordinator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DAD83B7304400800005AC49 /* Debug */,
