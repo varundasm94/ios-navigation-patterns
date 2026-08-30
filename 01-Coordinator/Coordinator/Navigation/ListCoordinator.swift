@@ -21,6 +21,6 @@ class ListCoordinator: Coordinator {
     
     func showDetail(item: Item) {
         let view = DetailView(item: item)
-        navigationController.pushViewController(UIHostingController(rootView: view), animated: true)
+        navigationController.pushViewController(HostingController(rootView: view), animated: true)
     }
 }

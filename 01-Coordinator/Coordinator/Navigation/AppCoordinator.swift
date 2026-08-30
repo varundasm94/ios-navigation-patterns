@@ -32,7 +32,7 @@ class AppCoordinator: Coordinator {
         let view = HomeView { [weak self] in
             self?.showList()
         }
-        navigationController.pushViewController(UIHostingController(rootView: view), animated: true)
+        navigationController.pushViewController(HostingController(rootView: view), animated: true)
     }
     
     func showList() {
