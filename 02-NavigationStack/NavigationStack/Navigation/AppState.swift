@@ -3,11 +3,18 @@ import SwiftUI
 @Observable
 class AppState {
     var path: [Route] = []
+//    var tripsPath:   [TripsRoute]   = []
+//    var accountPath: [AccountRoute] = []
     
     enum Route: Hashable {
         case list
         case detail(Item)
     }
+    
+//    enum TripsRoute: Hashable {
+//        case tripDetail(String)
+//        case addItem
+//    }
 }
 
 extension AppState {

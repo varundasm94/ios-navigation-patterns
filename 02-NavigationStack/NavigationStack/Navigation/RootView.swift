@@ -11,6 +11,15 @@ struct RootView: View {
         }
         .environment(appState)
         .onOpenURL(perform: { appState.handle($0) })
+        
+//        TabView {
+//            NavigationStack(path: $appState.tripsPath) {
+//                TripsHomeView()
+//                    .navigationDestination(for: TripsRoute.self) { route in
+//
+//                    }
+//            }
+//            .tabItem { Label("Trips", systemImage: "airplane") }
     }
 
     @ViewBuilder
