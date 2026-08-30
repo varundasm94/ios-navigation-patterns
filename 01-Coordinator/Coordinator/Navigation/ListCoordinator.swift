@@ -1,33 +1,22 @@
 import SwiftUI
 import UIKit
 
-protocol Coordinator {
-    func start()
-}
-
-class AppCoordinator: Coordinator {
+class ListCoordinator: Coordinator {
+    var childCoordinators: [Coordinator] = []
     let navigationController: UINavigationController
-
+    var onFinish: (()->Void)?
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-
-    func start() {
-        showHome()
-    }
-
-    func showHome() {
-        let view = HomeView { [weak self] in
-            self?.showList()
-        }
-        navigationController.pushViewController(UIHostingController(rootView: view), animated: true)
-    }
     
-    func showList() {
+    func start() {
         let view = ListView(items: Item.samples) { [weak self] item in
             self?.showDetail(item: item)
         }
-        navigationController.pushViewController(UIHostingController(rootView: view), animated: true)
+        let vc = HostingController(rootView: view)
+        vc.onDeinit = { [weak self] in self?.onFinish?() }
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func showDetail(item: Item) {
